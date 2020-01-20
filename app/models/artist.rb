@@ -1,5 +1,4 @@
 class Artist < ActiveRecord::Base
-    def change 
-
-    end 
+    has_many :songs 
+    has_many :genres, through: :songs 
 end
